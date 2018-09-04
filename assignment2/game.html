@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>Horse Racing</title>
+		<link rel="stylesheet" href="game.css" />
+		<script src="game.js"></script>
+	</head>
+
+	<body>
+
+
+<div class="right">
+
+
+
+				<button id="start" >
+					Start Race
+				</button>
+
+				<button id="reset" onclick="self['location']['reload']()">
+					Reset Race
+				</button>
+
+				<div id="bet">
+					<p>You currently have <span id="funds">100</span></p>
+					<label>Bet Amount  (£)</label>
+					<input id="amount" />
+					<label>Bet on horse:</label>
+					<select id="bethorse">
+						<option value="horse1">White</option>
+						<option value="horse2">Blue</option>
+						<option value="horse3">Green</option>
+						<option value="horse4">Brown</option>
+					</select>
+				</div>
+
+				<img src="images/tree.png" class="tree" />
+
+
+
+			<table id="results">
+				<thead>
+				<tr>
+					<th>Results</th>
+					<th></th>
+				</tr>
+				</thead>
+				<tr>
+					<td>1st</td>
+					<td class="horse1"></td>
+				</tr>
+				<tr>
+					<td>2nd</td>
+					<td class="horse2"></td>
+				</tr>
+				<tr>
+					<td>3rd</td>
+					<td class="horse3"></td>
+				</tr>
+				<tr>
+					<td>4th</td>
+					<td class="horse4"></td>
+				</tr>
+			</table>
+
+</div>
+
+<div id="scroll">
+
+	<div class="track">
+
+
+		<div id="horse1" class="horse standDown">
+			<div class="rider">
+				<div class="head">
+				</div>
+
+				<div class="body">
+				</div>
+			</div>
+		</div>
+
+
+		<div id="horse2" class="horse standDown">
+			<div class="rider">
+				<div class="head">
+				</div>
+
+				<div class="body">
+				</div>
+			</div>
+		</div>
+
+
+		<div id="horse3" class="horse standDown">
+			<div class="rider">
+				<div class="head">
+				</div>
+
+				<div class="body">
+				</div>
+			</div>
+		</div>
+
+
+		<div id="horse4" class="horse standDown">
+			<div class="rider">
+				<div class="head">
+				</div>
+
+				<div class="body">
+				</div>
+			</div>
+		</div>
+
+
+
+
+		<div class="bush jump1"></div>
+		<div class="bush jump2"></div>
+		<div class="bush jump3"></div>
+		<div class="bush jump4"></div>
+		<div class="bush jump5"></div>
+		<div class="bush jump6"></div>
+		<div id="finishline">
+
+
+		</div>
+	</div>
+</div>
+
+<div class="Position"> <!--the class Position is created-->
+	<p id="pos">Position</p><!-- the position for all the six bushes is created where the bush position can be set. -->
+
+	<div class="b1"><!-- class for bush 1 is created-->
+<p>Bush1:</p> <!--the heading for bush1 is created -->
+<input type="number" id="bush1" value="50"><!--the first bush input type, id and its default value is created-->
+	</div>
+	<div class="b2"><!-- class for bush 2 is created-->
+		<p>Bush2:</p> <!--the heading for bush2 is created -->
+		<input type="number" id="bush2" value="80"><!--the second bush input type, id and its default value is created-->
+	</div>
+	<div class="b3"><!-- class for bush 3 is created-->
+		<p>Bush3:</p> <!--the heading for bush3 is created -->
+		<input type="number" id="bush3" value="120"><!--the third bush input type, id and its default value is created-->
+	</div>
+	<div class="b4"><!-- class for bush 4 is created-->
+		<p>Bush4:</p> <!--the heading for bush4 is created -->
+		<input type="number" id="bush4" value="180"><!--the fourth bush input type, id and its default value is created-->
+	</div>
+	<div class="b5"><!-- class for bush 5 is created-->
+		<p>Bush5:</p> <!--the heading for bush5 is created -->
+		<input type="number" id="bush5" value="200"><!--the fifth bush input type, id and its default value is created-->
+	</div>
+	<div class="b6"><!-- class for bush 6 is created-->
+		<p>Bush6:</p> <!--the heading for bush6 is created -->
+		<input type="number" id="bush6" value="250"><!--the sixth bush input type, id and its default value is created-->
+	</div>
+	<button type="button" id="confirm">SET</button> <!--the  set button is created -->
+</div>
+
+<div class="overflows"> <!--class is created -->
+	<button type="button" id="Show">SHOW</button><!--the show button is created-->
+	<button type="button" id="Hide">HIDE</button><!-- the hide button is created -->
+</div>
+
+
+
+	</body>
+</html>
